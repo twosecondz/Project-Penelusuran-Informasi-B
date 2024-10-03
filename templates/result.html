@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Results for "{{ query }}"</h1>
+
+    <ul>
+      {% for title, doc_name, score in results %}
+      <li>
+        <a href="{{ url_for('document', doc_name=doc_name) }}">
+          <strong>{{ title }}</strong> - Score: {{ score }}
+        </a>
+        <p>{{ documents[doc_name][:150] }}...</p>
+        <!-- Preview konten -->
+      </li>
+      {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('index') }}">Back to Search</a>
+  </body>
+</html>

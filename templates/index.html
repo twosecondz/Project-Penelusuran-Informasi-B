@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onde Mande</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <style>
+      .google-color {
+        font-size: 48px; /* Ukuran font */
+        font-weight: bold; /* Tebal */
+        letter-spacing: 2px; /* Spasi antar huruf */
+      }
+
+      .red {
+        color: #db4437;
+      } /* Merah */
+      .blue {
+        color: #4285f4;
+      } /* Biru */
+      .yellow {
+        color: #f4b400;
+      } /* Kuning */
+      .green {
+        color: #0f9d58;
+      } /* Hijau */
+    </style>
+  </head>
+  <body>
+    <h1 class="google-color">
+      <span class="red">O</span>
+      <span class="blue">n</span>
+      <span class="yellow">d</span>
+      <span class="blue">e</span>
+      <span class="green"> </span>
+      <span class="red">M</span>
+      <span class="blue">a</span>
+      <span class="yellow">n</span>
+      <span class="blue">d</span>
+      <span class="green">e</span>
+    </h1>
+    <form method="POST" action="/search">
+      <input
+        type="text"
+        name="query"
+        placeholder="Enter your query..."
+        required
+      />
+
+      <!-- Dropdown untuk memilih algoritma -->
+      <select name="algorithm">
+        <option value="jaccard">Jaccard Similarity</option>
+        <option value="vsm">Vector Space Model (TF-IDF)</option>
+      </select>
+
+      <!-- Dropdown untuk memilih jumlah hasil yang ditampilkan -->
+      <select name="num_results">
+        <option value="5">5 results</option>
+        <option value="10">10 results</option>
+        <option value="15">15 results</option>
+        <option value="30">30 results</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
