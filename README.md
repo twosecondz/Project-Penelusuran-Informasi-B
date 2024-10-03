@@ -12,6 +12,8 @@ __Lecturer: Laina Farsiah, S.Si., M.S.__
 ## Tampilan  
 ![My Image](images/image1.png)  
 ![My Image](images/image2.png)  
+![My Image](images/image3.png)  
+![My Image](images/image4.png)  
 
 ## This Search Engine Using: Flask
 
