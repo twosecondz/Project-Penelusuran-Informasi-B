@@ -1,9 +1,19 @@
 # Project-Penelusuran-Informasi-B
+
+# Search Engine Sederhana
 Oleh: M. Syahidal Akbar Zas dan Alvia Zuhra  
 **University of Syiah Kuala**  
 __Lecturer: Laina Farsiah, S.Si., M.S.__  
 
-# This Search Engine Using: Flask
+## Algoritma Pencarian Informasi  
+  1. Jaccard Similarity  
+  2. Vector Space Model (TF-IDF)  
+
+## Tampilan  
+![My Image](images/image1.png)  
+![My Image](images/image2.png)  
+
+## This Search Engine Using: Flask
 
 Flask is a lightweight [WSGI][] web application framework. It is designed
 to make getting started quick and easy, with the ability to scale up to
