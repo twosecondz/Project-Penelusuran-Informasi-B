@@ -1,7 +1,7 @@
 # Project-Penelusuran-Informasi-B
-Oleh: M. Syahidal Akbar Zas dan Alvia Zuhra.
-**University of Syiah Kuala**.
-__Lecturer: Laina Farsiah, S.Si., M.S.__.
+Oleh: M. Syahidal Akbar Zas dan Alvia Zuhra  
+**University of Syiah Kuala**  
+__Lecturer: Laina Farsiah, S.Si., M.S.__  
 
 # This Search Engine Using: Flask
 
