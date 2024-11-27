@@ -39,7 +39,7 @@ def search_results():
 
 
 # Assuming 'folder_path' contains the path to your txt files
-folder_path = "C:/Users/LENOVO/Music/Search Engine/0. Crawling/Berita txt"
+folder_path = "Berita txt"
 
 
 @app.route('/document/<doc_name>')
